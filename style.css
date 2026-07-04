@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Cafe';
+    src: url(fontes/Cafe.ttf) format("truetype"), url(fontes/Cafe\ Light.ttf) format("truetype");
+    
+}
+
+@font-face {
+    font-family: 'Pixel' ;
+    src: url(fontes/Pixel.otf) format(opentype);
+}
+
+p{
+    font-family: 'Pixel';
+}
+
+ul{
+    font-family: 'Pixel'
+}
+
+header{
+    text-align: center;
+    ;
+}
+
+img{
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+
+h1{
+    font-family: 'Cafe';
+    font-weight: 600;
+    font-style: normal;
+    padding: 20px;
+    background-color: rgb(116, 253, 24);
+}
+
+h2{
+    font-family: "cafe";
+    font-style: normal;
+}
+
+a{
+    font-family: 'Pixel';
+    color: white;
+}
+
+section {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+nav{
+    display: flex;
+    padding: 3px;
+    background-color:rgb(43, 43, 43);
+    justify-content: center;
+     gap: 100px;
+    
+}
+
+nav a{
+    font-family: 'Pixel';
+    color: black;
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+   
+}
+
+nav a:hover {
+    background-color: rgb(116, 253, 24);
+    color:black;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* Transforma o parágrafo em um container flexível */
+footer p {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto perfeitamente pelo meio */
+    gap: 8px;            /* Cria o espaço exato entre o ícone e o texto */
+    margin: 10px;      /* Ajusta o espaçamento entre as linhas do rodapé */
+}
+
+/* Garante que a imagem do ícone não quebre a linha */
+footer p img {
+    margin: 10px;
+    display: inline;     /* Força o ícone a aceitar o alinhamento na mesma linha */
+    width: 22px;         /* Ajuste o tamanho do ícone caso ele mude */
+    height: auto;
+}
+
+
