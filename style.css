@@ -19,16 +19,15 @@ ul{
 
 header{
     text-align: center;
-    ;
 }
 
-img{
-    margin-top: -10px;
-    margin-bottom: 10px;
-
+.foto-perfil{
+    border-radius: 50%;
+    border: 3px solid red;
 }
 
 h1{
+    border: 2px solid red;
     font-family: 'Cafe';
     font-weight: 600;
     font-style: normal;
@@ -37,6 +36,7 @@ h1{
 }
 
 h2{
+    color: white;
     font-family: "cafe";
     font-style: normal;
 }
@@ -47,14 +47,18 @@ a{
 }
 
 section {
+    border: 3px solid red;
     background-color: rgb(29, 29, 29);
     color: white;
     margin: 20px;
     padding: 15px;
 }
-
+ aside{
+    font-family: 'Pixel';
+ }
 
 nav{
+    border: 3px solid red;
     display: flex;
     padding: 3px;
     background-color:rgb(43, 43, 43);
@@ -79,26 +83,62 @@ nav a:hover {
 }
 
 footer{
+    border: 3px solid red;
+    text-align: center;
     background-color: rgb(29, 29, 29);
     color: white;
     margin: 20px;
     padding: 15px;
 }
 
-/* Transforma o parágrafo em um container flexível */
-footer p {
-    display: flex;
-    align-items: center; /* Alinha o ícone e o texto perfeitamente pelo meio */
-    gap: 8px;            /* Cria o espaço exato entre o ícone e o texto */
-    margin: 10px;      /* Ajusta o espaçamento entre as linhas do rodapé */
+footer#sobremim{
+    text-align: left;
 }
 
-/* Garante que a imagem do ícone não quebre a linha */
-footer p img {
-    margin: 10px;
-    display: inline;     /* Força o ícone a aceitar o alinhamento na mesma linha */
-    width: 22px;         /* Ajuste o tamanho do ícone caso ele mude */
-    height: auto;
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    ul {
+        padding-left: 20px;
+        font-size: 0.95rem;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
+
+
+
+
 
 
