@@ -60,9 +60,11 @@ section {
 nav{
     border: 3px solid red;
     display: flex;
-    padding: 3px;
-    background-color:rgb(43, 43, 43);
     justify-content: center;
+    padding: 3px;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background-color:rgb(43, 43, 43);
      gap: 100px;
     
 }
@@ -73,7 +75,7 @@ nav a{
     display: inline-block;
     background-color: white;
     text-decoration: none;
-    padding: 5px 30px;
+    padding: 5px 20px;
    
 }
 
@@ -100,6 +102,16 @@ footer#sobremim{
 
     header {
         padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        width: 100%;
         text-align: center;
     }
 
